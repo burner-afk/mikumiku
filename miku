@@ -67,5 +67,5 @@ $miku | Out-File -FilePath "C:\miku.txt"
 $securePassword = ConvertTo-SecureString $password -AsPlainText -Force
 $credential = New-Object System.Management.Automation.PSCredential $username, $securePassword
 
-ii "C:\miku.txt" -Credential $credential
+ii "C:\miku.txt" 
 
